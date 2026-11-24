@@ -1,8 +1,10 @@
 import { NextResponse } from "next/server";
 import { findColleges } from "@/lib/college-finder/finder-engine";
 import { CollegeFinderInput, SeatPool, StudentCategory } from "@/lib/college-finder/types";
+import { loadGridFromDb } from "@/lib/rankwise/predict";
 
 export async function GET(req: Request) {
+  await loadGridFromDb();
   const u = new URL(req.url);
   const inputType = (u.searchParams.get("inputType") || "marks") as "marks" | "percentile" | "rank" | "category_rank";
   const marksParam = u.searchParams.get("marks");
@@ -50,6 +52,7 @@ export async function GET(req: Request) {
 }
 
 export async function POST(req: Request) {
+  await loadGridFromDb();
   try {
     const body = await req.json();
     const inputType = (body.inputType || "marks") as "marks" | "percentile" | "rank" | "category_rank";

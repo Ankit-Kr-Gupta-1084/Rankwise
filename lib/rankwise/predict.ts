@@ -3,6 +3,7 @@
 // Every marks value in 0..300 returns a result; uncertainty is carried in the *_low/*_high fields.
 import fs from "fs";
 import path from "path";
+import { getDb } from "@/lib/db";
 
 export type Year = number;
 
@@ -83,6 +84,42 @@ function load(): Map<number, Row[]> {
     };
   }
   return cache;
+}
+
+export async function loadGridFromDb(): Promise<boolean> {
+  if (cache && cache.size > 0) return true;
+  try {
+    const db = getDb();
+    if (!db) return false;
+    const rows = await db`
+      SELECT year, marks, percentile, percentile_low, percentile_high, air, air_best, air_worst, confidence, basis
+      FROM marks_rank_grid
+      ORDER BY year, marks ASC;
+    `;
+    if (!rows || rows.length === 0) return false;
+
+    const newCache = new Map<number, Row[]>();
+    for (const r of rows) {
+      const y = Number(r.year);
+      const m = Number(r.marks);
+      if (!newCache.has(y)) newCache.set(y, []);
+      newCache.get(y)![m] = {
+        percentile: Number(r.percentile),
+        percentileLow: Number(r.percentile_low),
+        percentileHigh: Number(r.percentile_high),
+        air: Number(r.air),
+        airBest: Number(r.air_best),
+        airWorst: Number(r.air_worst),
+        confidence: r.confidence as Row["confidence"],
+        basis: String(r.basis),
+      };
+    }
+    cache = newCache;
+    return true;
+  } catch (err) {
+    console.warn("PostgreSQL marks_rank_grid load failed, fallback to CSV:", err);
+    return false;
+  }
 }
 
 export function predict(marks: number, year?: Year): Prediction {

@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { predict, predictByPercentile, getProjectedYear, Year } from "../../../lib/rankwise/predict";
+import { predict, predictByPercentile, getProjectedYear, Year, loadGridFromDb } from "../../../lib/rankwise/predict";
 
 export async function GET(req: Request) {
   const u = new URL(req.url);
@@ -7,6 +7,9 @@ export async function GET(req: Request) {
   const percentileParam = u.searchParams.get("percentile");
   const yearParam = u.searchParams.get("year");
   const year = (yearParam ? Number(yearParam) : getProjectedYear()) as Year;
+
+  // Hydrate grid from PostgreSQL if available
+  await loadGridFromDb();
 
   try {
     if (percentileParam !== null && percentileParam !== "") {
