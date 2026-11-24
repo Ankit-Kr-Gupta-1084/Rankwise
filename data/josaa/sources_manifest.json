@@ -1,0 +1,39 @@
+{
+  "sources": [
+    {
+      "name": "JoSAA 2024 All Rounds Opening and Closing Ranks",
+      "year": 2024,
+      "data_type": "Official",
+      "url": "https://josaa.admissions.nic.in/applicant/seatallotmentresult/currentorcr.aspx",
+      "verification": "Verified against JoSAA 2024 official rounds 1-5"
+    },
+    {
+      "name": "JoSAA 2025 All Rounds Opening and Closing Ranks",
+      "year": 2025,
+      "data_type": "Official",
+      "url": "https://josaa.admissions.nic.in/applicant/seatallotmentresult/currentorcr.aspx",
+      "verification": "Verified against JoSAA 2025 official rounds 1-6"
+    },
+    {
+      "name": "JoSAA 2026 All Rounds Opening and Closing Ranks",
+      "year": 2026,
+      "data_type": "Official",
+      "url": "https://josaa.admissions.nic.in/applicant/seatallotmentresult/currentorcr.aspx",
+      "verification": "Verified against JoSAA 2026 official rounds 1-5"
+    },
+    {
+      "name": "Official Institute Placement Reports & NIRF Submissions",
+      "year": "2024",
+      "data_type": "Verified Official Records",
+      "url": "data/reference/placement_packages.csv",
+      "verification": "Verified against NIRF 2024 and institute placement reports"
+    },
+    {
+      "name": "NTA JEE Main Qualifying Cutoffs & Category Calibration Data",
+      "year": "2024-2026",
+      "data_type": "Empirical Calibration from Verifiable Scorecards",
+      "url": "data/josaa/category_rank_calibration.csv",
+      "verification": "Empirical scorecards and official qualifying thresholds"
+    }
+  ]
+}

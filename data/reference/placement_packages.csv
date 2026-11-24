@@ -1,0 +1,70 @@
+institute_id,institute_name,branch_id,branch_name,average_lpa,median_lpa,highest_lpa,placement_year,metric_type,source_url,source_type,verification_status,last_updated
+NIT-TRICHY,"National Institute of Technology, Tiruchirappalli",,,15.76,12.80,52.89,2024,CTC,https://www.nitt.edu/home/academics/departments/placement/stats/,official_placement_report,verified_official,2024-11
+NIT-TRICHY,"National Institute of Technology, Tiruchirappalli",CSE,Computer Science and Engineering,27.20,25.00,52.89,2024,CTC,https://www.nitt.edu/home/academics/departments/placement/stats/,official_placement_report,verified_official,2024-11
+NIT-TRICHY,"National Institute of Technology, Tiruchirappalli",ECE,Electronics and Communication Engineering,23.10,21.00,,2024,CTC,https://www.nitt.edu/home/academics/departments/placement/stats/,official_placement_report,verified_official,2024-11
+NIT-TRICHY,"National Institute of Technology, Tiruchirappalli",EEE,Electrical and Electronics Engineering,19.30,17.50,,2024,CTC,https://www.nitt.edu/home/academics/departments/placement/stats/,official_placement_report,verified_official,2024-11
+NIT-TRICHY,"National Institute of Technology, Tiruchirappalli",ICE,Instrumentation and Control Engineering,18.46,16.50,,2024,CTC,https://www.nitt.edu/home/academics/departments/placement/stats/,official_placement_report,verified_official,2024-11
+NIT-TRICHY,"National Institute of Technology, Tiruchirappalli",ME,Mechanical Engineering,13.55,12.00,,2024,CTC,https://www.nitt.edu/home/academics/departments/placement/stats/,official_placement_report,verified_official,2024-11
+NIT-TRICHY,"National Institute of Technology, Tiruchirappalli",MME,Metallurgical and Materials Engineering,13.58,12.00,,2024,CTC,https://www.nitt.edu/home/academics/departments/placement/stats/,official_placement_report,verified_official,2024-11
+NIT-TRICHY,"National Institute of Technology, Tiruchirappalli",CHE,Chemical Engineering,12.54,11.50,,2024,CTC,https://www.nitt.edu/home/academics/departments/placement/stats/,official_placement_report,verified_official,2024-11
+NIT-TRICHY,"National Institute of Technology, Tiruchirappalli",CE,Civil Engineering,12.90,11.00,,2024,CTC,https://www.nitt.edu/home/academics/departments/placement/stats/,official_placement_report,verified_official,2024-11
+MNNIT-ALLAHABAD,Motilal Nehru National Institute of Technology Allahabad,,,16.50,14.00,135.00,2024,CTC,https://www.mnnit.ac.in/index.php/placement,official_placement_report,verified_official,2024-11
+MNNIT-ALLAHABAD,Motilal Nehru National Institute of Technology Allahabad,CSE,Computer Science and Engineering,26.27,24.00,135.00,2024,CTC,https://www.mnnit.ac.in/index.php/placement,official_placement_report,verified_official,2024-11
+MNNIT-ALLAHABAD,Motilal Nehru National Institute of Technology Allahabad,IT,Information Technology,23.19,21.00,,2024,CTC,https://www.mnnit.ac.in/index.php/placement,official_placement_report,verified_official,2024-11
+MNNIT-ALLAHABAD,Motilal Nehru National Institute of Technology Allahabad,ECE,Electronics and Communication Engineering,19.52,17.50,,2024,CTC,https://www.mnnit.ac.in/index.php/placement,official_placement_report,verified_official,2024-11
+MNNIT-ALLAHABAD,Motilal Nehru National Institute of Technology Allahabad,EE,Electrical Engineering,15.34,13.00,,2024,CTC,https://www.mnnit.ac.in/index.php/placement,official_placement_report,verified_official,2024-11
+MNNIT-ALLAHABAD,Motilal Nehru National Institute of Technology Allahabad,ME,Mechanical Engineering,10.74,9.50,,2024,CTC,https://www.mnnit.ac.in/index.php/placement,official_placement_report,verified_official,2024-11
+MNNIT-ALLAHABAD,Motilal Nehru National Institute of Technology Allahabad,CHE,Chemical Engineering,10.21,9.00,,2024,CTC,https://www.mnnit.ac.in/index.php/placement,official_placement_report,verified_official,2024-11
+MNNIT-ALLAHABAD,Motilal Nehru National Institute of Technology Allahabad,PIE,Production and Industrial Engineering,9.87,8.50,,2024,CTC,https://www.mnnit.ac.in/index.php/placement,official_placement_report,verified_official,2024-11
+MNNIT-ALLAHABAD,Motilal Nehru National Institute of Technology Allahabad,CE,Civil Engineering,9.54,8.00,,2024,CTC,https://www.mnnit.ac.in/index.php/placement,official_placement_report,verified_official,2024-11
+MNNIT-ALLAHABAD,Motilal Nehru National Institute of Technology Allahabad,BT,Biotechnology,9.22,8.00,,2024,CTC,https://www.mnnit.ac.in/index.php/placement,official_placement_report,verified_official,2024-11
+NIT-SURATHKAL,"National Institute of Technology Karnataka, Surathkal",,,18.26,15.00,54.75,2024,CTC,https://career.nitk.ac.in/placement-statistics,official_placement_report,verified_official,2024-11
+NIT-SURATHKAL,"National Institute of Technology Karnataka, Surathkal",CSE,Computer Science and Engineering,28.65,26.00,54.75,2024,CTC,https://career.nitk.ac.in/placement-statistics,official_placement_report,verified_official,2024-11
+NIT-SURATHKAL,"National Institute of Technology Karnataka, Surathkal",IT,Information Technology,25.40,23.00,,2024,CTC,https://career.nitk.ac.in/placement-statistics,official_placement_report,verified_official,2024-11
+NIT-SURATHKAL,"National Institute of Technology Karnataka, Surathkal",ECE,Electronics and Communication Engineering,22.80,20.00,,2024,CTC,https://career.nitk.ac.in/placement-statistics,official_placement_report,verified_official,2024-11
+NIT-SURATHKAL,"National Institute of Technology Karnataka, Surathkal",EEE,Electrical and Electronics Engineering,17.80,15.00,,2024,CTC,https://career.nitk.ac.in/placement-statistics,official_placement_report,verified_official,2024-11
+NIT-SURATHKAL,"National Institute of Technology Karnataka, Surathkal",ME,Mechanical Engineering,13.40,11.50,,2024,CTC,https://career.nitk.ac.in/placement-statistics,official_placement_report,verified_official,2024-11
+NIT-SURATHKAL,"National Institute of Technology Karnataka, Surathkal",CHE,Chemical Engineering,13.20,11.00,,2024,CTC,https://career.nitk.ac.in/placement-statistics,official_placement_report,verified_official,2024-11
+NIT-SURATHKAL,"National Institute of Technology Karnataka, Surathkal",MME,Metallurgical and Materials Engineering,12.80,11.00,,2024,CTC,https://career.nitk.ac.in/placement-statistics,official_placement_report,verified_official,2024-11
+NIT-SURATHKAL,"National Institute of Technology Karnataka, Surathkal",CE,Civil Engineering,10.50,9.00,,2024,CTC,https://career.nitk.ac.in/placement-statistics,official_placement_report,verified_official,2024-11
+NIT-SURATHKAL,"National Institute of Technology Karnataka, Surathkal",MN,Mining Engineering,10.20,8.50,,2024,CTC,https://career.nitk.ac.in/placement-statistics,official_placement_report,verified_official,2024-11
+NIT-WARANGAL,"National Institute of Technology, Warangal",,,17.29,15.00,88.00,2024,CTC,https://www.nitw.ac.in/placement,official_placement_report,verified_official,2024-11
+NIT-WARANGAL,"National Institute of Technology, Warangal",CSE,Computer Science and Engineering,30.80,28.00,88.00,2024,CTC,https://www.nitw.ac.in/placement,official_placement_report,verified_official,2024-11
+NIT-WARANGAL,"National Institute of Technology, Warangal",ECE,Electronics and Communication Engineering,23.60,21.00,,2024,CTC,https://www.nitw.ac.in/placement,official_placement_report,verified_official,2024-11
+NIT-WARANGAL,"National Institute of Technology, Warangal",EEE,Electrical and Electronics Engineering,21.16,18.00,,2024,CTC,https://www.nitw.ac.in/placement,official_placement_report,verified_official,2024-11
+NIT-WARANGAL,"National Institute of Technology, Warangal",ME,Mechanical Engineering,12.80,11.00,,2024,CTC,https://www.nitw.ac.in/placement,official_placement_report,verified_official,2024-11
+NIT-WARANGAL,"National Institute of Technology, Warangal",CHE,Chemical Engineering,12.40,10.50,,2024,CTC,https://www.nitw.ac.in/placement,official_placement_report,verified_official,2024-11
+NIT-WARANGAL,"National Institute of Technology, Warangal",CE,Civil Engineering,10.20,9.00,,2024,CTC,https://www.nitw.ac.in/placement,official_placement_report,verified_official,2024-11
+NIT-ROURKELA,"National Institute of Technology, Rourkela",,,15.74,13.00,83.60,2024,CTC,https://www.nitrkl.ac.in/Training-Placement/,official_placement_report,verified_official,2024-11
+NIT-ROURKELA,"National Institute of Technology, Rourkela",CSE,Computer Science and Engineering,24.18,22.00,83.60,2024,CTC,https://www.nitrkl.ac.in/Training-Placement/,official_placement_report,verified_official,2024-11
+NIT-ROURKELA,"National Institute of Technology, Rourkela",ECE,Electronics and Communication Engineering,19.45,17.50,,2024,CTC,https://www.nitrkl.ac.in/Training-Placement/,official_placement_report,verified_official,2024-11
+NIT-CALICUT,National Institute of Technology Calicut,,,13.77,11.50,50.00,2024,CTC,https://nitc.ac.in/placements,official_placement_report,verified_official,2024-11
+NIT-CALICUT,National Institute of Technology Calicut,CSE,Computer Science and Engineering,21.92,20.00,50.00,2024,CTC,https://nitc.ac.in/placements,official_placement_report,verified_official,2024-11
+NIT-CALICUT,National Institute of Technology Calicut,ECE,Electronics and Communication Engineering,17.65,15.50,,2024,CTC,https://nitc.ac.in/placements,official_placement_report,verified_official,2024-11
+NIT-DELHI,National Institute of Technology Delhi,,,17.72,14.50,82.00,2024,CTC,https://nitdelhi.ac.in/?page_id=11929,official_placement_report,verified_official,2024-11
+MNIT-JAIPUR,Malaviya National Institute of Technology Jaipur,,,13.20,11.00,64.00,2024,CTC,https://mnit.ac.in/placement/,official_placement_report,verified_official,2024-11
+NIT-DURGAPUR,National Institute of Technology Durgapur,,,13.62,11.00,70.00,2024,CTC,https://nitdgp.ac.in/p/placement-overview,official_placement_report,verified_official,2024-11
+NIT-KURUKSHETRA,"National Institute of Technology, Kurukshetra",,,14.16,12.00,62.00,2024,CTC,https://nitkkr.ac.in/?page_id=599,official_placement_report,verified_official,2024-11
+NIT-JAMSHEDPUR,"National Institute of Technology, Jamshedpur",,,15.98,13.50,83.00,2024,CTC,https://nitjsr.ac.in/Tap/placement,official_placement_report,verified_official,2024-11
+MANIT-BHOPAL,Maulana Azad National Institute of Technology Bhopal,,,11.55,10.00,82.00,2024,CTC,http://www.manit.ac.in/placement-statistics,official_placement_report,verified_official,2024-11
+NIT-JALANDHAR,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",,,12.44,10.50,51.00,2024,CTC,https://v1.nitj.ac.in/index.php/nitj_cinfo/index/67,official_placement_report,verified_official,2024-11
+VNIT-NAGPUR,"Visvesvaraya National Institute of Technology, Nagpur",,,11.36,10.00,64.00,2024,CTC,https://vnit.ac.in/training-and-placement/,official_placement_report,verified_official,2024-11
+SVNIT-SURAT,"Sardar Vallabhbhai National Institute of Technology, Surat",,,10.50,9.50,44.00,2024,CTC,https://www.svnit.ac.in/web/tnp.php,official_placement_report,verified_official,2024-11
+NIT-SILCHAR,"National Institute of Technology, Silchar",,,13.58,11.00,52.89,2024,CTC,http://tnp.nits.ac.in/,official_placement_report,verified_official,2024-11
+NIT-GOA,National Institute of Technology Goa,,,11.45,10.00,26.00,2024,CTC,https://nitgoa.ac.in/placement/,official_placement_report,verified_official,2024-11
+NIT-HAMIRPUR,National Institute of Technology Hamirpur,,,10.95,9.00,173.00,2024,CTC,https://nith.ac.in/training-placement,official_placement_report,verified_official,2024-11
+NIT-PATNA,National Institute of Technology Patna,,,10.25,9.00,52.00,2024,CTC,https://www.nitp.ac.in/placement,official_placement_report,verified_official,2024-11
+NIT-RAIPUR,National Institute of Technology Raipur,,,10.50,9.00,55.00,2024,CTC,http://www.nitrr.ac.in/placement.php,official_placement_report,verified_official,2024-11
+NIT-MEGHALAYA,National Institute of Technology Meghalaya,,,10.10,8.50,32.00,2024,CTC,https://www.nitm.ac.in/c/placement-cell,official_placement_report,verified_official,2024-11
+NIT-PUDUCHERRY,National Institute of Technology Puducherry,,,9.70,8.00,24.50,2024,CTC,https://www.nitpy.ac.in/placement,official_placement_report,verified_official,2024-11
+NIT-UTTARAKHAND,"National Institute of Technology, Uttarakhand",,,8.40,7.50,21.00,2024,CTC,https://nituk.ac.in/index.php/placements,official_placement_report,verified_official,2024-11
+NIT-ANDHRA,"National Institute of Technology, Andhra Pradesh",,,8.13,7.00,44.00,2024,CTC,https://www.nitandhra.ac.in/main/placement,official_placement_report,verified_official,2024-11
+NIT-AGARTALA,National Institute of Technology Agartala,,,8.50,7.20,52.00,2024,CTC,https://www.nita.ac.in/Placement/PlacementHome.aspx,official_placement_report,verified_official,2024-11
+NIT-MANIPUR,"National Institute of Technology, Manipur",,,8.20,7.00,47.00,2024,CTC,http://www.nitmanipur.ac.in/placement/,official_placement_report,verified_official,2024-11
+NIT-SIKKIM,National Institute of Technology Sikkim,,,8.10,7.00,20.00,2024,CTC,https://nitsikkim.ac.in/placement/,official_placement_report,verified_official,2024-11
+NIT-MIZORAM,"National Institute of Technology, Mizoram",,,7.80,6.80,14.50,2024,CTC,https://www.nitmz.ac.in/Training_and_Placement.aspx,official_placement_report,verified_official,2024-11
+NIT-NAGALAND,National Institute of Technology Nagaland,,,7.50,6.50,45.00,2024,CTC,https://nitnagaland.ac.in/placement/,official_placement_report,verified_official,2024-11
+NIT-ARUNACHAL,National Institute of Technology Arunachal Pradesh,,,7.20,6.20,19.00,2024,CTC,https://www.nitap.ac.in/tnp,official_placement_report,verified_official,2024-11
+IIEST-SHIBPUR,"Indian Institute of Engineering Science and Technology, Shibpur",,,11.50,10.00,51.00,2024,CTC,https://www.iiests.ac.in/IIEST/PlacementStatistics,official_placement_report,verified_official,2024-11
+PEC-CHANDIGARH,"Punjab Engineering College, Chandigarh",,,15.43,12.00,83.00,2024,CTC,https://pec.ac.in/tnp/placement-statistics,official_placement_report,verified_official,2024-11
+BIT-MESRA,"Birla Institute of Technology, Mesra, Ranchi",,,11.57,9.50,58.33,2024,CTC,https://www.bitmesra.ac.in/Show_Placement_Home,official_placement_report,verified_official,2024-11
