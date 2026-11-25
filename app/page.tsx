@@ -40,6 +40,36 @@ const formatAir = (v: number) => {
   return Math.round(v).toLocaleString("en-IN");
 };
 
+const homepageSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://jeerankpredictor.duodevs.xyz/#website",
+      name: "RankWise",
+      url: "https://jeerankpredictor.duodevs.xyz/",
+      description:
+        "Predict your JEE Main 2027 All India Rank and percentile from your expected or actual marks with shift difficulty analytics.",
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://jeerankpredictor.duodevs.xyz/#webapp",
+      name: "RankWise",
+      url: "https://jeerankpredictor.duodevs.xyz/",
+      applicationCategory: "EducationalApplication",
+      operatingSystem: "All",
+      browserRequirements: "Requires JavaScript. Requires HTML5.",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "INR",
+      },
+      description:
+        "Free JEE Main 2027 rank and percentile predictor based on expected marks and multi-year normalization models.",
+    },
+  ],
+};
+
 export default function Home() {
   const [inputValue, setInputValue] = useState("");
   const [availableYears, setAvailableYears] = useState<number[]>(DEFAULT_YEARS);
@@ -282,6 +312,12 @@ export default function Home() {
 
   return (
     <div className="rw-page-root">
+      {/* Schema.org Structured Data (JSON-LD) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchema) }}
+      />
+
       {/* Top Navbar Header with DuoDevs Logo */}
       <header className="rw-header">
         <div className="rw-header-inner">
