@@ -446,7 +446,7 @@ export default function Home() {
                         <path d="m14 9h5v5" />
                       </svg>
                     </div>
-                    <h3 className="rw-widget-title">Predict Your JEE Rank</h3>
+                    <h2 className="rw-widget-title">Predict Your JEE Rank</h2>
                   </div>
 
                   <p className="rw-widget-sub">
@@ -536,7 +536,7 @@ export default function Home() {
                         <span className="rw-dot">•</span>
                         <span>{inputValue} / 300 Marks</span>
                       </div>
-                      <h3 className="rw-widget-title">Predicted Result</h3>
+                      <h2 className="rw-widget-title">Predicted Result</h2>
                     </div>
                   </div>
 
@@ -677,7 +677,7 @@ export default function Home() {
                         <span className="rw-dot">•</span>
                         <span>JoSAA {projectedYear}</span>
                       </div>
-                      <h3 className="rw-widget-title">Explore Eligible Colleges</h3>
+                      <h2 className="rw-widget-title">Explore Eligible Colleges</h2>
                     </div>
                   </div>
 
@@ -844,7 +844,7 @@ export default function Home() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="rw-widget-title">JoSAA College Predictor</h3>
+                      <h2 className="rw-widget-title">JoSAA College Predictor</h2>
                     </div>
                   </div>
 
@@ -1146,8 +1146,8 @@ export default function Home() {
                   <p className="rw-spec-desc">
                     Discover eligible NITs, IIITs, and CFIs based on your predicted CRL, category rank spline, seat quota, and domicile state.
                   </p>
-                  <span className="rw-spec-btn blue">
-                    <span>Launch Predictor</span>
+                  <Link href="/college-finder" className="rw-spec-btn blue">
+                    <span>Launch JoSAA College Predictor</span>
                     <svg
                       width="15"
                       height="15"
@@ -1161,7 +1161,7 @@ export default function Home() {
                       <line x1="5" y1="12" x2="19" y2="12" />
                       <polyline points="12 5 19 12 12 19" />
                     </svg>
-                  </span>
+                  </Link>
                 </div>
 
                 <div className="rw-spec-art-wrap" aria-hidden="true">
@@ -1595,6 +1595,56 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Comprehensive Student Guide to JEE Main Rank Prediction & JoSAA Allotment */}
+        <section className="rw-why-section" style={{ marginTop: "40px", borderTop: "1px solid #e2e8f0", paddingTop: "48px" }}>
+          <div className="rw-section-header-wrap rw-center">
+            <h2 className="rw-section-title rw-center">
+              Understanding <span className="rw-title-accent">JEE Main Rank Prediction &amp; Marks vs Percentile</span>
+            </h2>
+            <p className="rw-section-sub rw-center" style={{ maxWidth: "780px" }}>
+              A student-first guide to score normalization, shift difficulty variations, percentile calculations, and JoSAA counselling choice filling.
+            </p>
+          </div>
+
+          <div className="rw-why-grid" style={{ marginTop: "28px" }}>
+            <div className="rw-why-card blue">
+              <div className="rw-why-card-content">
+                <h3 className="rw-why-title">How RankWise Predicts Your JEE Rank</h3>
+                <p className="rw-why-desc">
+                  Rank prediction translates your raw exam score (out of 300) into an estimated All India Rank (AIR) and Category Rank. RankWise utilizes empirical score distributions from past NTA results and shift-by-shift difficulty matrices to compute your expected percentile and rank bracket.
+                </p>
+              </div>
+            </div>
+
+            <div className="rw-why-card purple">
+              <div className="rw-why-card-content">
+                <h3 className="rw-why-title">Marks vs Percentile Explained</h3>
+                <p className="rw-why-desc">
+                  Your raw marks represent the total score achieved in physics, chemistry, and mathematics. Your NTA percentile measures the percentage of test-takers who scored equal to or below your score in that specific session. Your All India Rank is determined from this combined multi-session percentile.
+                </p>
+              </div>
+            </div>
+
+            <div className="rw-why-card green">
+              <div className="rw-why-card-content">
+                <h3 className="rw-why-title">Shift Difficulty &amp; Score Drift</h3>
+                <p className="rw-why-desc">
+                  Because question papers vary in difficulty across exam days, a score of 180 in a demanding shift can earn a higher percentile than 200 marks in an easier shift. Explore our <Link href="/history" style={{ color: "#7c3aed", fontWeight: 600, textDecoration: "underline" }}>Historical Shift Difficulty Analytics</Link> to inspect multi-year drift across 2024–2026 shifts.
+                </p>
+              </div>
+            </div>
+
+            <div className="rw-why-card orange">
+              <div className="rw-why-card-content">
+                <h3 className="rw-why-title">From Rank to JoSAA College Allotment</h3>
+                <p className="rw-why-desc">
+                  After finding your predicted rank, use our <Link href="/college-finder" style={{ color: "#ea580c", fontWeight: 600, textDecoration: "underline" }}>JoSAA College Predictor 2027</Link> to discover matching engineering branches across NITs, IIITs, and GFTIs calibrated to your category, seat quota, and state domicile.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* 3. Share on WhatsApp & Copy Link Banner */}
         <section className="rw-share-section">
           <div className="rw-share-bar">
@@ -1696,6 +1746,19 @@ export default function Home() {
               Built by Engineers, for Future Engineers.
             </h3>
           </div>
+
+          {/* Sitewide Internal Navigation Links */}
+          <nav className="rw-footer-nav" aria-label="RankWise Quick Links" style={{ display: "flex", flexWrap: "wrap", gap: "24px", justifyContent: "center", margin: "20px 0 10px 0" }}>
+            <Link href="/" style={{ color: "#94a3b8", fontSize: "14px", textDecoration: "none", fontWeight: 500 }}>
+              JEE Main Rank Predictor 2027
+            </Link>
+            <Link href="/college-finder" style={{ color: "#94a3b8", fontSize: "14px", textDecoration: "none", fontWeight: 500 }}>
+              JoSAA College Predictor 2027
+            </Link>
+            <Link href="/history" style={{ color: "#94a3b8", fontSize: "14px", textDecoration: "none", fontWeight: 500 }}>
+              Historical Marks vs Percentile Trends
+            </Link>
+          </nav>
 
           <div className="rw-footer-divider" />
 

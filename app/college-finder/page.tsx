@@ -411,18 +411,132 @@ export default function CollegeFinderPage() {
               Return to JoSAA Predictor
             </button>
           </div>
-        ) : loading ? (
-          /* Instant Elegant Loading State */
-          <div className="cf-loading-card">
-            <div className="cf-spinner" />
-            <h3>Predicting Eligible Colleges…</h3>
-            <p>Analyzing 100% official JoSAA closing ranks across all NITs, IIITs and GFTIs.</p>
-          </div>
         ) : !data ? (
-          <div className="cf-loading-card">
-            <div className="cf-spinner" />
-            <h3>Opening JoSAA College Predictor…</h3>
-            <p>Redirecting to the in-place College Predictor on the home page.</p>
+          <div className="cf-fallback-root">
+            <div className="cf-results-header" style={{ marginBottom: "28px" }}>
+              <div className="cf-header-left">
+                <div className="cf-hero-badge">
+                  <span className="cf-hero-badge-dot" />
+                  <span>100% Official JoSAA Data Based Prediction</span>
+                </div>
+                <h1 className="cf-main-title">
+                  JEE Main <span className="cf-title-accent">College Predictor 2027</span> &amp; JoSAA College Finder
+                </h1>
+                <p className="cf-main-sub">
+                  Accurate, data-backed seat allotment predictions across NITs, IIITs &amp; GFTIs calibrated to your score, category rank, and home state quota.
+                </p>
+              </div>
+            </div>
+
+            <div className="cf-loading-card">
+              <div className="cf-spinner" />
+              {loading ? (
+                <>
+                  <h2 style={{ fontSize: "1.25rem", fontWeight: 700, margin: "16px 0 8px 0", color: "#0b0f19" }}>
+                    Predicting Eligible Colleges…
+                  </h2>
+                  <p style={{ color: "#64748b", margin: "0 0 16px 0" }}>
+                    Analyzing official JoSAA closing ranks across all NITs, IIITs and GFTIs.
+                  </p>
+                </>
+              ) : (
+                <>
+                  <h2 style={{ fontSize: "1.25rem", fontWeight: 700, margin: "16px 0 8px 0", color: "#0b0f19" }}>
+                    Opening JoSAA College Predictor…
+                  </h2>
+                  <p style={{ color: "#64748b", margin: "0 0 16px 0" }}>
+                    Redirecting to the in-place College Predictor on the home page.
+                  </p>
+                  <Link
+                    href="/?step=college-form"
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "8px",
+                      padding: "10px 20px",
+                      backgroundColor: "#2563eb",
+                      color: "#ffffff",
+                      borderRadius: "8px",
+                      fontWeight: 600,
+                      fontSize: "14px",
+                      textDecoration: "none",
+                    }}
+                  >
+                    <span>Open JoSAA College Predictor Form</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <polyline points="12 5 19 12 12 19" />
+                    </svg>
+                  </Link>
+                </>
+              )}
+            </div>
+
+            {/* Comprehensive Student Guide to JoSAA Counselling & Seat Allotment */}
+            <section style={{ marginTop: "44px", borderTop: "1px solid #e2e8f0", paddingTop: "36px" }}>
+              <h2 style={{ fontSize: "1.65rem", fontWeight: 800, color: "#0b0f19", marginBottom: "8px" }}>
+                Understanding <span style={{ color: "#2563eb" }}>JoSAA Counselling &amp; College Prediction</span>
+              </h2>
+              <p style={{ color: "#64748b", fontSize: "1rem", lineHeight: 1.6, marginBottom: "24px" }}>
+                Key principles to know about seat quotas, closing ranks, category allocations, and choosing the right engineering institute.
+              </p>
+
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
+                <div style={{ padding: "20px", borderRadius: "12px", border: "1px solid #e2e8f0", background: "#f8fafc" }}>
+                  <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#0f172a", marginBottom: "8px" }}>
+                    NITs, IIITs &amp; GFTIs Seat Allocation
+                  </h3>
+                  <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.55 }}>
+                    Joint Seat Allocation Authority (JoSAA) manages 6 centralized counselling rounds for all 31 National Institutes of Technology (NITs), 26 Indian Institutes of Information Technology (IIITs), and 38+ Government Funded Technical Institutes (GFTIs) based on JEE Main scores.
+                  </p>
+                </div>
+
+                <div style={{ padding: "20px", borderRadius: "12px", border: "1px solid #e2e8f0", background: "#f8fafc" }}>
+                  <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#0f172a", marginBottom: "8px" }}>
+                    Category Ranks vs CRL
+                  </h3>
+                  <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.55 }}>
+                    Candidates belonging to GEN-EWS, OBC-NCL, SC, or ST receive a Category Rank in addition to their Common Rank List (CRL). In JoSAA seat allocation, category-reserved seats are filled exclusively using Category Ranks, while Open seats use CRL ranks.
+                  </p>
+                </div>
+
+                <div style={{ padding: "20px", borderRadius: "12px", border: "1px solid #e2e8f0", background: "#f8fafc" }}>
+                  <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#0f172a", marginBottom: "8px" }}>
+                    Gender-Neutral vs Female-Only Pool
+                  </h3>
+                  <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.55 }}>
+                    Under government directives, NITs and IIITs allocate supernumerary seats for female candidates to ensure at least 20% female enrollment. Female candidates are eligible for both Gender-Neutral seats and Female-Only supernumerary quotas.
+                  </p>
+                </div>
+
+                <div style={{ padding: "20px", borderRadius: "12px", border: "1px solid #e2e8f0", background: "#f8fafc" }}>
+                  <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#0f172a", marginBottom: "8px" }}>
+                    Home State (HS) vs Other State (OS) Quota
+                  </h3>
+                  <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.55 }}>
+                    NITs reserve 50% of their seats for candidates whose 12th board examination state matches the institute&apos;s home state (HS Quota). The remaining 50% is open to Other State (OS Quota) aspirants. IIITs typically allocate 100% of seats on an All India (AI) basis.
+                  </p>
+                </div>
+
+                <div style={{ padding: "20px", borderRadius: "12px", border: "1px solid #e2e8f0", background: "#f8fafc" }}>
+                  <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#0f172a", marginBottom: "8px" }}>
+                    Opening and Closing Ranks
+                  </h3>
+                  <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.55 }}>
+                    Closing ranks indicate the rank of the last candidate admitted to a specific program in that round. Round 6 closing ranks define the final cutoff. RankWise correlates your predicted rank against multi-year official Round 1–6 closing archives.
+                  </p>
+                </div>
+
+                <div style={{ padding: "20px", borderRadius: "12px", border: "1px solid #e2e8f0", background: "#f8fafc" }}>
+                  <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#0f172a", marginBottom: "8px" }}>
+                    Calculate Your JEE Rank First
+                  </h3>
+                  <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.55 }}>
+                    Need to determine your rank first? Calculate your All India Rank with our <Link href="/" style={{ color: "#2563eb", fontWeight: 600, textDecoration: "underline" }}>JEE Main Rank Predictor 2027</Link> or review <Link href="/history" style={{ color: "#7c3aed", fontWeight: 600, textDecoration: "underline" }}>Historical Shift Difficulty Analytics</Link>.
+                  </p>
+                </div>
+              </div>
+            </section>
           </div>
         ) : (
           /* Results View: Clean split hero layout with Homepage-style Scale */
@@ -438,7 +552,7 @@ export default function CollegeFinderPage() {
                 </div>
 
                 <h1 className="cf-main-title">
-                  JEE Main <span className="cf-title-accent">College Predictor</span>
+                  JEE Main <span className="cf-title-accent">College Predictor 2027</span>
                 </h1>
 
                 <p className="cf-main-sub">
@@ -1010,6 +1124,37 @@ export default function CollegeFinderPage() {
           </div>
         )}
       </div>
+
+      {/* Spacious Minimal Dark Navy Footer */}
+      <footer className="rw-site-footer" style={{ marginTop: "60px", background: "#090d16", padding: "48px 24px 32px 24px", borderTop: "1px solid rgba(255, 255, 255, 0.08)" }}>
+        <div style={{ maxWidth: "1140px", margin: "0 auto", textAlign: "center" }}>
+          <h3 style={{ color: "#ffffff", fontSize: "1.25rem", fontWeight: 700, margin: "0 0 16px 0" }}>
+            Built by Engineers, for Future Engineers.
+          </h3>
+
+          {/* Sitewide Internal Navigation Links */}
+          <nav aria-label="RankWise Quick Links" style={{ display: "flex", flexWrap: "wrap", gap: "24px", justifyContent: "center", margin: "16px 0 24px 0" }}>
+            <Link href="/" style={{ color: "#94a3b8", fontSize: "14px", textDecoration: "none", fontWeight: 500 }}>
+              JEE Main Rank Predictor 2027
+            </Link>
+            <Link href="/college-finder" style={{ color: "#94a3b8", fontSize: "14px", textDecoration: "none", fontWeight: 500 }}>
+              JoSAA College Predictor 2027
+            </Link>
+            <Link href="/history" style={{ color: "#94a3b8", fontSize: "14px", textDecoration: "none", fontWeight: 500 }}>
+              Historical Marks vs Percentile Trends
+            </Link>
+          </nav>
+
+          <div style={{ height: "1px", background: "rgba(255, 255, 255, 0.08)", margin: "20px 0" }} />
+
+          <p style={{ color: "#64748b", fontSize: "13px", margin: "0 0 8px 0" }}>
+            An independent initiative built to support JEE aspirants across India. Not affiliated with NTA, JoSAA, or any government authority.
+          </p>
+          <div style={{ color: "#475569", fontSize: "12px" }}>
+            © 2027 JEE Predictor. All Rights Reserved.
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

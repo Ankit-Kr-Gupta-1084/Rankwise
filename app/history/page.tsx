@@ -117,10 +117,20 @@ export default function HistoryPage() {
             <span>Shift Archive &amp; Difficulty Matrix • 2024–2026</span>
           </div>
           <h1 className="hist-title">
-            Historical Shift <span className="hist-title-accent">Difficulty Analytics</span>
+            JEE Main <span className="hist-title-accent">Marks vs Percentile &amp; Shift Difficulty (2024–2026)</span>
           </h1>
           <p className="hist-sub">
             Shift-by-shift difficulty variations, marks-vs-percentile drift, and normalized qualifying score benchmarks.
+          </p>
+        </div>
+
+        {/* Section Heading for Shift Matrix */}
+        <div style={{ marginTop: "16px", marginBottom: "12px" }}>
+          <h2 style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0f172a", margin: "0 0 4px 0" }}>
+            Shift Difficulty &amp; Session Comparison Matrix
+          </h2>
+          <p style={{ fontSize: "0.92rem", color: "#64748b", margin: 0 }}>
+            Select session and examination year to analyze marks vs percentile cutoffs for each shift.
           </p>
         </div>
 
@@ -255,6 +265,54 @@ export default function HistoryPage() {
             </div>
           </div>
         ) : null}
+
+        {/* Comprehensive Student Guide to JEE Main Marks vs Percentile & Normalization */}
+        <section style={{ marginTop: "48px", borderTop: "1px solid #e2e8f0", paddingTop: "36px", marginBottom: "40px" }}>
+          <h2 className="hist-title" style={{ fontSize: "1.75rem", marginBottom: "8px" }}>
+            Understanding JEE Main <span className="hist-title-accent">Shift Normalization &amp; Percentile Trends</span>
+          </h2>
+          <p className="hist-sub" style={{ marginBottom: "24px" }}>
+            A detailed analytical guide explaining how paper difficulty, session timing, and NTA multi-session normalization influence your marks-to-percentile conversion.
+          </p>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
+            <div style={{ padding: "20px", borderRadius: "12px", border: "1px solid #e2e8f0", background: "#f8fafc" }}>
+              <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#0f172a", marginBottom: "8px" }}>
+                What Is Marks vs Percentile Drift?
+              </h3>
+              <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.55 }}>
+                Marks vs percentile drift occurs because each exam shift features distinct question sets with varying difficulty levels. In a difficult shift, fewer students achieve high scores, lowering the raw marks required for a 99+ percentile. In an easy shift, raw marks inflate.
+              </p>
+            </div>
+
+            <div style={{ padding: "20px", borderRadius: "12px", border: "1px solid #e2e8f0", background: "#f8fafc" }}>
+              <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#0f172a", marginBottom: "8px" }}>
+                How NTA Normalization Operates
+              </h3>
+              <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.55 }}>
+                The National Testing Agency (NTA) normalizes raw scores using a percentile formula scaled to 7 decimal places. This ensures that a candidate’s rank is evaluated strictly relative to their peers in the exact same shift, preventing unfair disadvantages from difficult test papers.
+              </p>
+            </div>
+
+            <div style={{ padding: "20px", borderRadius: "12px", border: "1px solid #e2e8f0", background: "#f8fafc" }}>
+              <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#0f172a", marginBottom: "8px" }}>
+                January vs April Session Comparison
+              </h3>
+              <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.55 }}>
+                Historical data from 2024 to 2026 demonstrates that the April session typically experiences a score jump of 5 to 15 marks for identical percentiles. With students having completed their 12th board exams and full syllabus revision, average competitor scores rise noticeably in Session 2.
+              </p>
+            </div>
+
+            <div style={{ padding: "20px", borderRadius: "12px", border: "1px solid #e2e8f0", background: "#f8fafc" }}>
+              <h3 style={{ fontSize: "1.05rem", fontWeight: 700, color: "#0f172a", marginBottom: "8px" }}>
+                Benchmarking Your Target Score for 2027
+              </h3>
+              <p style={{ fontSize: "0.92rem", color: "#475569", lineHeight: 1.55 }}>
+                Use these historical shift benchmarks to set safe target scores: aim for 195–215+ marks for a 99+ percentile in moderate shifts, and 160–180+ marks for 97+ percentile. Once you estimate your score, test your rank with our <Link href="/" style={{ color: "#2563eb", fontWeight: 600, textDecoration: "underline" }}>JEE Main Rank Predictor 2027</Link> or evaluate engineering admissions with our <Link href="/college-finder" style={{ color: "#7c3aed", fontWeight: 600, textDecoration: "underline" }}>JoSAA College Predictor</Link>.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* Spacious Minimal Dark Navy Footer */}
@@ -297,6 +355,19 @@ export default function HistoryPage() {
               Built by Engineers, for Future Engineers.
             </h3>
           </div>
+
+          {/* Sitewide Internal Navigation Links */}
+          <nav aria-label="RankWise Quick Links" style={{ display: "flex", flexWrap: "wrap", gap: "24px", justifyContent: "center", margin: "20px 0 10px 0" }}>
+            <Link href="/" style={{ color: "#94a3b8", fontSize: "14px", textDecoration: "none", fontWeight: 500 }}>
+              JEE Main Rank Predictor 2027
+            </Link>
+            <Link href="/college-finder" style={{ color: "#94a3b8", fontSize: "14px", textDecoration: "none", fontWeight: 500 }}>
+              JoSAA College Predictor 2027
+            </Link>
+            <Link href="/history" style={{ color: "#94a3b8", fontSize: "14px", textDecoration: "none", fontWeight: 500 }}>
+              Historical Marks vs Percentile Trends
+            </Link>
+          </nav>
 
           <div className="rw-footer-divider" />
 
